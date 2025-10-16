@@ -1,27 +1,872 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Opiniones de Usuarios</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Estado de Ecuakong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      width: 60px;
+      height: 60px;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+    section {
+      padding: 20px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    .btn {
+      background: #1abc9c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #16a085;
+    }
+  </style>
 </head>
 <body>
-  <section class="formulario">
-    <h1>💬 Deja tu Comentario</h1>
-    <form id="formulario">
-      <input type="text" id="nombre" placeholder="Tu nombre" required />
-      <textarea id="comentario" placeholder="Escribe tu comentario" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p class="mensaje"></p>
+
+  <header>
+    <img src="ECU.png" alt="Logo de Ecuakong" height="100" width="100">
+    <h1>Estado de Ecuakong</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('ultimo')">Último</a>
+    <a href="#" onclick="showSection('articulos')">Artículos</a>
+    <a href="#" onclick="showSection('multimedia')">Multimedia</a>
+    <a href="#" onclick="showSection('acerca')">Acerca de</a>
+  </nav>
+
+  <section id="ultimo" class="active">
+    <h2>Últimas novedades</h2>
+    <p>Aquí se mostrarán las actualizaciones más recientes del estado de Ecuakong.</p>
+    <button class="btn" onclick="alert('¡Gracias por seguirnos!')">Seguir</button>
   </section>
 
-  <section class="admin-acceso">
-    <h2>🔐 Acceso Administrador</h2>
-    <input type="password" id="clave" placeholder="Ingresa la clave" />
-    <button onclick="accederAdmin()">Acceder</button>
+<img src="sello.jpg" alt="propiedad" height="200" width="200">
+
+  <section id="articulos">
+    <h2>Artículos destacados</h2>
+    <ul>
+      <li>Artículo N1: RGHRGHRUE.</li>
+<li>Artículo N2: Más cosas.</li>
+<li>Artículo N3: Todo individuo que mastique aire será multado con tres pensamientos.</li>
+<li>Artículo N4: Se prohíbe mirar al sol con cara de sospecha.</li>
+<li>Artículo N5: El que diga “ñu” sin contexto será enviado a la Oficina de Animales Confusos.</li>
+<li>Artículo N6: Las cucharas no podrán bailar tango los martes.</li>
+<li>Artículo N7: Si un zapato habla, debe ser escuchado con respeto.</li>
+<li>Artículo N8: Nadie podrá nombrar a un plátano sin antes pedirle permiso.</li>
+<li>Artículo N9: El que camine hacia atrás en línea recta será considerado filósofo.</li>
+<li>Artículo N10: Las nubes tienen derecho a cambiar de forma sin previo aviso.</li>
+<li>Artículo N11: Se declara ilegal olvidar por qué uno entró a la cocina.</li>
+<li>Artículo N12: Todo sombrero que se crea superior será reeducado.</li>
+<li>Artículo N13: Las tostadoras no pueden tener sueños de grandeza.</li>
+<li>Artículo N14: Si un gato te juzga, debes aceptar el veredicto.</li>
+<li>Artículo N15: El que diga “me olvidé lo que iba a decir” será premiado con un silencio incómodo.</li>
+<li>Artículo N16: Las escaleras que crujen deben ser interrogadas.</li>
+<li>Artículo N17: Se prohíbe coleccionar suspiros ajenos sin licencia.</li>
+<li>Artículo N18: El que se ría de su propio chiste será ascendido a bufón interdimensional.</li>
+<li>Artículo N19: Las plantas que bailen deben hacerlo con discreción.</li>
+<li>Artículo N20: Si un espejo te devuelve una cara distinta, debes saludarla.</li>
+<li>Artículo N21: Se permite llorar por cebollas solo si son sinceras.</li>
+<li>Artículo N22: Todo paraguas que se niegue a abrir será enviado a terapia.</li>
+<li>Artículo N23: Las piedras que ruedan deben pagar peaje emocional.</li>
+<li>Artículo N24: El que diga “esto es absurdo” será nombrado Ministro de Realidad.</li>
+<li>Artículo N25: Las puertas que se cierran solas deben ser investigadas por el Comité de Misterios Cotidianos.</li>
+<li>Artículo N26: Se prohíbe olvidar cumpleaños de objetos queridos.</li>
+<li>Artículo N27: Si un reloj se detiene, se le debe preguntar por qué.</li>
+<li>Artículo N28: Las sombras tienen derecho a vacaciones.</li>
+<li>Artículo N29: El que se tropiece con su propio ego será multado con introspección.</li>
+<li>Artículo N30: Las mariposas que opinen sobre política serán escuchadas.</li>
+<li>Artículo N31: Se permite hablar con electrodomésticos si se les trata con cariño.</li>
+<li>Artículo N32: Todo bostezo debe ser registrado en el Archivo Nacional de Aburrimientos.</li>
+<li>Artículo N33: Las bufandas que se enreden solas serán consideradas rebeldes.</li>
+<li>Artículo N34: Si un lápiz se niega a escribir, se le debe motivar con poesía.</li>
+<li>Artículo N35: Se prohíbe ignorar el canto de los grillos por considerarlo irrelevante.</li>
+<li>Artículo N36: Todo bostezo colectivo será considerado ritual ancestral.</li>
+<li>Artículo N37: Las pelusas debajo del sofá tienen derecho a formar sindicato.</li>
+<li>Artículo N38: El que se ría sin razón será investigado por el Departamento de Alegría Espontánea.</li>
+<li>Artículo N39: Las ventanas que susurren deben ser traducidas por expertos.</li>
+<li>Artículo N40: Se permite bailar en la ducha solo si se canta en idioma inventado.</li>
+<li>Artículo N41: Todo calcetín perdido será honrado con ceremonia de despedida.</li>
+<li>Artículo N42: Las cucharas que brillen demasiado serán consideradas sospechosas.</li>
+<li>Artículo N43: Si una silla te rechaza, debes pedirle disculpas.</li>
+<li>Artículo N44: Se prohíbe juzgar a los relojes por su puntualidad.</li>
+<li>Artículo N45: Las pelotas que reboten sin motivo serán entrevistadas.</li>
+<li>Artículo N46: El que se enamore de una nube debe escribirle una carta.</li>
+<li>Artículo N47: Las lámparas que parpadeen deben ser escuchadas.</li>
+<li>Artículo N48: Se permite hablar con el viento si se le ofrece té.</li>
+<li>Artículo N49: Todo bostezo que contagie será considerado líder espiritual.</li>
+<li>Artículo N50: Todo Josepy que lance una tapa al piso y se ensucie con un gramo de Polvo
+    quedará betado de la institucion de los espanta viejas y será setenciado a un día de carcen y 1.132.323 horas y puesto 
+    a cadena perpetua en 30 vidas reencarnadas si llega a reencarnar </li>
+<li>Artículo N51: Las zanahorias que se rían serán consideradas sospechosas.</li>
+<li>Artículo N52: Todo bostezo emitido en una biblioteca será archivado como poema.</li>
+<li>Artículo N53: Las mochilas que se escapen serán perseguidas por el Escuadrón de Equipaje Rebelde.</li>
+<li>Artículo N54: Se prohíbe discutir con el eco sin argumentos válidos.</li>
+<li>Artículo N55: Las burbujas que exploten con estilo serán premiadas en la Gala de Efímeros.</li>
+<li>Artículo N56: Si un semáforo te guiña el ojo, debes responder con cortesía.</li>
+<li>Artículo N57: Las cucharas que se nieguen a servir sopa serán reasignadas a tareas filosóficas.</li>
+<li>Artículo N58: Todo bostezo que interrumpa una sinfonía será considerado arte moderno.</li>
+<li>Artículo N59: Las pelusas que formen figuras geométricas serán exhibidas en museos.</li>
+<li>Artículo N60: Se permite a los paraguas cantar bajo la lluvia si están afinados.</li>
+<li>Artículo N61: Las piedras que cuenten chistes deben ser escuchadas con atención.</li>
+<li>Artículo N62: Si una nube te sigue por más de tres cuadras, debes invitarla a café.</li>
+<li>Artículo N63: Las tostadoras que escriban poesía serán publicadas en revistas literarias.</li>
+<li>Artículo N64: Todo bostezo que se repita tres veces invoca al Espíritu del Sueño.</li>
+<li>Artículo N65: Las ventanas que lloren deben recibir pañuelos metafóricos.</li>
+<li>Artículo N66: Se prohíbe ignorar los suspiros de los muebles antiguos.</li>
+<li>Artículo N67: Las bicicletas que sueñen con volar serán entrenadas por pájaros.</li>
+<li>Artículo N68: Si un reloj se ríe, debes preguntarle la hora con respeto.</li>
+<li>Artículo N69: Las bufandas que abracen demasiado fuerte serán consideradas afectivas.</li>
+<li>Artículo N70: Todo bostezo que se escape en una reunión será considerado protesta silenciosa.</li>
+<li>Artículo N71: Las lámparas que cuenten secretos deben ser desenchufadas con discreción.</li>
+<li>Artículo N72: Se permite a los espejos tener opiniones sobre peinados.</li>
+<li>Artículo N73: Las pelotas que se nieguen a rebotar serán enviadas a terapia de elasticidad.</li>
+<li>Artículo N74: Si un lápiz escribe solo, debe ser contratado como escritor fantasma.</li>
+<li>Artículo N75: Las puertas que se abran sin razón serán investigadas por el Comité de Curiosidades.</li>
+<li>Artículo N76: Todo bostezo que se disfrace será considerado performance.</li>
+<li>Artículo N77: Las alfombras que murmuren deben ser traducidas por lingüistas textiles.</li>
+<li>Artículo N78: Se prohíbe juzgar a los relojes por su tic.</li>
+<li>Artículo N79: Las sombras que bailen serán invitadas a festivales nocturnos.</li>
+<li>Artículo N80: Si una silla te abraza, debes agradecerle con una siesta.</li>
+<li>Artículo N81: Las cucharas que filosofen serán enviadas a debates culinarios.</li>
+<li>Artículo N82: Todo bostezo que se convierta en canción será grabado en vinilo.</li>
+<li>Artículo N83: Las plantas que susurren secretos deben ser regadas con confidencialidad.</li>
+<li>Artículo N84: Se permite a los paraguas tener crisis existenciales en otoño.</li>
+<li>Artículo N85: Las piedras que mediten serán consideradas sabias.</li>
+<li>Artículo N86: Si un espejo te aplaude, debes hacer una reverencia.</li>
+<li>Artículo N87: Las tostadoras que se enamoren deben ser emparejadas con cafeteras compatibles.</li>
+<li>Artículo N88: Todo bostezo que se escape en clase será considerado rebelión académica.</li>
+<li>Artículo N89: Las bufandas que se nieguen a abrigar serán enviadas al trópico.</li>
+<li>Artículo N90: Se prohíbe ignorar los consejos de los relojes antiguos.</li>
+<li>Artículo N91: Las pelusas que canten serán grabadas por productores invisibles.</li>
+<li>Artículo N92: Si una nube te cuenta un chiste, debes reír aunque no lo entiendas.</li>
+<li>Artículo N93: Las bicicletas que escriban diarios serán publicados en revistas de viaje.</li>
+<li>Artículo N94: Todo bostezo que se contagie será considerado epidemia emocional.</li>
+<li>Artículo N95: Las lámparas que bailen serán invitadas a fiestas eléctricas.</li>
+<li>Artículo N96: Se permite a los espejos tener días de descanso.</li>
+<li>Artículo N97: Las pelotas que filosofen serán enviadas a seminarios deportivos.</li>
+<li>Artículo N98: Si un lápiz dibuja sueños, debe ser guardado en caja fuerte.</li>
+<li>Artículo N99: Las puertas que cuenten historias serán consideradas narradoras oficiales.</li>
+<li>Artículo N100: Todo bostezo que se disfrace de estornudo será considerado travieso.</li>
+<li>Artículo N101: Las cucharas que se nieguen a reflejar sopa serán enviadas a la Universidad de Utensilios Rebeldes.</li>
+<li>Artículo N102: Si una nube se enamora de una montaña, debe enviarle una carta perfumada con rocío.</li>
+<li>Artículo N103: Todo bostezo que se disfrace de bostezo ajeno será considerado impostor emocional.</li>
+<li>Artículo N104: Las pelusas que formen coros serán contratadas por la Ópera del Polvo.</li>
+<li>Artículo N105: Josepy Calle no podrá usar paraguas si el cielo está despejado y hay olor a menta.</li>
+<li>Artículo N106: Las lámparas que se nieguen a iluminar serán enviadas a meditación luminosa.</li>
+<li>Artículo N107: Si un espejo te devuelve una imagen de Josepy Calle bailando, debes aplaudir sin preguntar.</li>
+<li>Artículo N108: Las tostadoras que se nieguen a tostar pan de ajo serán exiliadas a la Isla de los Electrodomésticos Neutrales.</li>
+<li>Artículo N109: Todo bostezo que se escape durante una siesta será considerado traición al descanso.</li>
+<li>Artículo N110: Las bufandas que se enreden en discusiones filosóficas serán enviadas al Congreso Textil.</li>
+<li>Artículo N111: Josepy Calle no podrá pronunciar la palabra “sandía” en presencia de un ventilador encendido.</li>
+<li>Artículo N112: Las piedras que se rían deben ser interrogadas por el Departamento de Humor Mineral.</li>
+<li>Artículo N113: Si una silla rechaza a Josepy Calle, se le otorgará una medalla por valentía estructural.</li>
+<li>Artículo N114: Las sombras que se nieguen a seguir a sus dueños serán consideradas entidades autónomas.</li>
+<li>Artículo N115: Todo bostezo que se convierta en poema será publicado en la Revista de Respiraciones Creativas.</li>
+<li>Artículo N116: Las alfombras que se deslicen solas deben ser monitoreadas por el Comité de Desplazamientos Misteriosos.</li>
+<li>Artículo N117: Si Josepy Calle lanza una tapa al piso y esta rebota, se activará el Protocolo de Rebote Inesperado.</li>
+<li>Artículo N118: Las ventanas que se nieguen a abrir serán enviadas a terapia de bisagra.</li>
+<li>Artículo N119: Todo bostezo que se sincronice con el canto de un gallo será considerado fenómeno astral.</li>
+<li>Artículo N120: Las cucharas que se duerman en el cajón serán despertadas con cuentos de cocina.</li>
+<li>Artículo N121: Josepy Calle no podrá usar calcetines si el reloj marca las 3:33 y hay luna menguante.</li>
+<li>Artículo N122: Las plantas que se burlen del viento serán podadas con sarcasmo.</li>
+<li>Artículo N123: Si una nube se posa sobre Josepy Calle por más de 7 minutos, se considerará amistad legal.</li>
+<li>Artículo N124: Las pelotas que se nieguen a rodar serán enviadas a clases de motivación circular.</li>
+<li>Artículo N125: Todo bostezo que se escape en presencia de una mariposa será considerado señal de transformación.</li>
+<li>Artículo N126: Las lámparas que parpadeen en código Morse deben ser traducidas por poetas eléctricos.</li>
+<li>Artículo N127: Josepy Calle no podrá mirar fijamente a una tostadora sin permiso escrito del pan involucrado.</li>
+<li>Artículo N128: Las bufandas que se nieguen a abrigar serán enviadas al Caribe.</li>
+<li>Artículo N129: Si una piedra le guiña el ojo a Josepy Calle, se activará el protocolo de flirteo geológico.</li>
+<li>Artículo N130: Todo bostezo que se disfrace de bostezo ajeno será considerado impostor emocional.</li>
+<li>Artículo N131: Las alfombras que murmuren secretos serán entrevistadas por periodistas invisibles.</li>
+<li>Artículo N132: Josepy Calle no podrá usar sombrero si hay más de tres gatos en la habitación.</li>
+<li>Artículo N133: Las ventanas que se rían deben ser grabadas para fines educativos.</li>
+<li>Artículo N134: Todo bostezo que se convierta en canción será interpretado por coros de grillos.</li>
+<li>Artículo N135: Las cucharas que filosofen serán invitadas a debates culinarios.</li>
+<li>Artículo N136: Si Josepy Calle tropieza con su sombra, debe pedirle disculpas públicamente.</li>
+<li>Artículo N137: Las plantas que bailen bajo la luna serán consideradas artistas botánicas.</li>
+<li>Artículo N138: Todo bostezo que se escape en una biblioteca será archivado como poema.</li>
+<li>Artículo N139: Las lámparas que cuenten chistes deben ser enchufadas con entusiasmo.</li>
+<li>Artículo N140: Josepy Calle no podrá usar la palabra “tornillo” si hay una ardilla presente.</li>
+<li>Artículo N141: Las bufandas que se nieguen a ser dobladas serán enviadas a terapia textil.</li>
+<li>Artículo N142: Si una nube le da sombra a Josepy Calle, se considerará acto de cortesía atmosférica.</li>
+<li>Artículo N143: Todo bostezo que se repita tres veces invoca al Espíritu del Sueño.</li>
+<li>Artículo N144: Las pelusas que formen figuras geométricas serán exhibidas en museos.</li>
+<li>Artículo N145: Josepy Calle no podrá usar paraguas si el cielo está despejado y hay olor a menta.</li>
+<li>Artículo N146: Las tostadoras que escriban poesía serán publicadas en revistas literarias.</li>
+<li>Artículo N147: Todo bostezo que interrumpa una sinfonía será considerado arte moderno.</li>
+<li>Artículo N148: Las piedras que rueden deben pagar peaje emocional.</li>
+<li>Artículo N149: Si Josepy Calle pronuncia “floripondio” frente a un espejo, se abrirá un portal a la Oficina de Asuntos Inútiles.</li>
+<li>Artículo N150: Las sombras tienen derecho a vacaciones.</li>
+<li>Artículo N151: Las cucharas que se nieguen a reflejar sopa serán enviadas a la Universidad de Utensilios Rebeldes.</li>
+<li>Artículo N152: Si una nube se enamora de una montaña, debe enviarle una carta perfumada con rocío.</li>
+<li>Artículo N153: Todo bostezo que se disfrace de bostezo ajeno será considerado impostor emocional.</li>
+<li>Artículo N154: Las pelusas que formen coros serán contratadas por la Ópera del Polvo.</li>
+<li>Artículo N155: Josepy no podrá usar paraguas si el cielo está despejado y hay olor a menta.</li>
+<li>Artículo N156: Las lámparas que se nieguen a iluminar serán enviadas a meditación luminosa.</li>
+<li>Artículo N157: Si un espejo te devuelve una imagen de Josepy bailando, debes aplaudir sin preguntar.</li>
+<li>Artículo N158: Las tostadoras que se nieguen a tostar pan de ajo serán exiliadas a la Isla de los Electrodomésticos Neutrales.</li>
+<li>Artículo N159: Todo bostezo que se escape durante una siesta será considerado traición al descanso.</li>
+<li>Artículo N160: Las bufandas que se enreden en discusiones filosóficas serán enviadas al Congreso Textil.</li>
+<li>Artículo N161: Josepy no podrá pronunciar la palabra “sandía” en presencia de un ventilador encendido.</li>
+<li>Artículo N162: Las piedras que se rían deben ser interrogadas por el Departamento de Humor Mineral.</li>
+<li>Artículo N163: Si una silla rechaza a Josepy, se le otorgará una medalla por valentía estructural.</li>
+<li>Artículo N164: Las sombras que se nieguen a seguir a sus dueños serán consideradas entidades autónomas.</li>
+<li>Artículo N165: Todo bostezo que se convierta en poema será publicado en la Revista de Respiraciones Creativas.</li>
+<li>Artículo N166: Las alfombras que se deslicen solas deben ser monitoreadas por el Comité de Desplazamientos Misteriosos.</li>
+<li>Artículo N167: Si Josepy lanza una tapa al piso y esta rebota, se activará el Protocolo de Rebote Inesperado.</li>
+<li>Artículo N168: Las ventanas que se nieguen a abrir serán enviadas a terapia de bisagra.</li>
+<li>Artículo N169: Todo bostezo que se sincronice con el canto de un gallo será considerado fenómeno astral.</li>
+<li>Artículo N170: Las cucharas que se duerman en el cajón serán despertadas con cuentos de cocina.</li>
+<li>Artículo N171: Josepy no podrá usar calcetines si el reloj marca las 3:33 y hay luna menguante.</li>
+<li>Artículo N172: Las plantas que se burlen del viento serán podadas con sarcasmo.</li>
+<li>Artículo N173: Si una nube se posa sobre Josepy por más de 7 minutos, se considerará amistad legal.</li>
+<li>Artículo N174: Las pelotas que se nieguen a rodar serán enviadas a clases de motivación circular.</li>
+<li>Artículo N175: Todo bostezo que se escape en presencia de una mariposa será considerado señal de transformación.</li>
+<li>Artículo N176: Las lámparas que parpadeen en código Morse deben ser traducidas por poetas eléctricos.</li>
+<li>Artículo N177: Josepy no podrá mirar fijamente a una tostadora sin permiso escrito del pan involucrado.</li>
+<li>Artículo N178: Las bufandas que se nieguen a abrigar serán enviadas al Caribe.</li>
+<li>Artículo N179: Si una piedra le guiña el ojo a Josepy, se activará el protocolo de flirteo geológico.</li>
+<li>Artículo N180: Todo bostezo que se disfrace de bostezo ajeno será considerado impostor emocional.</li>
+<li>Artículo N181: Las alfombras que murmuren secretos serán entrevistadas por periodistas invisibles.</li>
+<li>Artículo N182: Josepy no podrá usar sombrero si hay más de tres gatos en la habitación.</li>
+<li>Artículo N183: Las ventanas que se rían deben ser grabadas para fines educativos.</li>
+<li>Artículo N184: Todo bostezo que se convierta en canción será interpretado por coros de grillos.</li>
+<li>Artículo N185: Las cucharas que filosofen serán invitadas a debates culinarios.</li>
+<li>Artículo N186: Si Josepy tropieza con su sombra, debe pedirle disculpas públicamente.</li>
+<li>Artículo N187: Las plantas que bailen bajo la luna serán consideradas artistas botánicas.</li>
+<li>Artículo N188: Todo bostezo que se escape en una biblioteca será archivado como poema.</li>
+<li>Artículo N189: Las lámparas que cuenten chistes deben ser enchufadas con entusiasmo.</li>
+<li>Artículo N190: Josepy no podrá usar la palabra “tornillo” si hay una ardilla presente.</li>
+<li>Artículo N191: Las bufandas que se nieguen a ser dobladas serán enviadas a terapia textil.</li>
+<li>Artículo N192: Si una nube le da sombra a Josepy, se considerará acto de cortesía atmosférica.</li>
+<li>Artículo N193: Todo bostezo que se repita tres veces invoca al Espíritu del Sueño.</li>
+<li>Artículo N194: Las pelusas que formen figuras geométricas serán exhibidas en museos.</li>
+<li>Artículo N195: Josepy no podrá usar paraguas si el cielo está despejado y hay olor a menta.</li>
+<li>Artículo N196: Las tostadoras que escriban poesía serán publicadas en revistas literarias.</li>
+<li>Artículo N197: Todo bostezo que interrumpa una sinfonía será considerado arte moderno.</li>
+<li>Artículo N198: Las piedras que rueden deben pagar peaje emocional.</li>
+<li>Artículo N199: Si Josepy pronuncia “floripondio” frente a un espejo, se abrirá un portal a la Oficina de Asuntos Inútiles.</li>
+<li>Artículo N200: Las sombras tienen derecho a vacaciones.</li>
+<li>Artículo N201: Las cucharas que se nieguen a girar en círculos serán enviadas a clases de danza rotativa.</li>
+<li>Artículo N202: Si una nube bosteza, debe hacerlo con discreción para no asustar a los pájaros.</li>
+<li>Artículo N203: Todo bostezo que se escape en una reunión de pelusas será considerado falta de respeto textil.</li>
+<li>Artículo N204: Las lámparas que sueñen con ser estrellas deben ser enchufadas con esperanza.</li>
+<li>Artículo N205: Josepy no podrá usar guantes si hay más de dos pelusas en el ambiente.</li>
+<li>Artículo N206: Las tostadoras que se nieguen a calentar pan serán enviadas a la Clínica de Frialdad Emocional.</li>
+<li>Artículo N207: Si Josepy se ríe de una piedra, debe pedirle disculpas por subestimarla.</li>
+<li>Artículo N208: Las bufandas que se enreden en debates políticos serán enviadas al Senado de los Accesorios.</li>
+<li>Artículo N209: Todo bostezo que se convierta en eco será considerado fenómeno acústico espontáneo.</li>
+<li>Artículo N210: Las sombras que se escondan detrás de Josepy serán consideradas cómplices de travesuras.</li>
+<li>Artículo N211: Josepy no podrá usar la palabra “pepino” si hay una lámpara encendida cerca.</li>
+<li>Artículo N212: Las ventanas que se nieguen a mostrar el exterior serán enviadas a terapia de transparencia.</li>
+<li>Artículo N213: Si una nube le lanza una mirada intensa a Josepy, se activará el protocolo de romance atmosférico.</li>
+<li>Artículo N214: Las cucharas que se nieguen a reflejar la luna serán consideradas poéticamente tímidas.</li>
+<li>Artículo N215: Todo bostezo que se sincronice con el tic de un reloj será considerado danza temporal.</li>
+<li>Artículo N216: Las alfombras que se enrollen solas serán enviadas a la Academia de Yoga Doméstico.</li>
+<li>Artículo N217: Josepy no podrá usar sombrero si hay viento con actitud sospechosa.</li>
+<li>Artículo N218: Las piedras que se nieguen a ser pisadas serán protegidas por el Sindicato de Suelos.</li>
+<li>Artículo N219: Si Josepy tropieza con una sombra que no es suya, debe reportarlo al Ministerio de Identidades Oscuras.</li>
+<li>Artículo N220: Las lámparas que parpadeen sin motivo serán consideradas artistas conceptuales.</li>
+<li>Artículo N221: Todo bostezo que se disfrace de estornudo será considerado travesura nasal.</li>
+<li>Artículo N222: Las bufandas que se nieguen a acompañar chaquetas serán enviadas a terapia de compromiso.</li>
+<li>Artículo N223: Josepy no podrá mirar fijamente a una nube si está lloviendo pensamientos.</li>
+<li>Artículo N224: Las tostadoras que canten mientras trabajan serán grabadas para el álbum “Pan y Melodía”.</li>
+<li>Artículo N225: Si una piedra le cuenta un secreto a Josepy, debe guardarlo en una caja fuerte emocional.</li>
+<li>Artículo N226: Las ventanas que se rían durante tormentas serán consideradas bromistas meteorológicas.</li>
+<li>Artículo N227: Todo bostezo que se escape en presencia de una lámpara será considerado iluminación emocional.</li>
+<li>Artículo N228: Las sombras que se nieguen a moverse serán consideradas en huelga existencial.</li>
+<li>Artículo N229: Josepy no podrá usar paraguas si hay más de tres grillos cantando.</li>
+<li>Artículo N230: Las cucharas que se nieguen a participar en sopas serán enviadas a la Reserva de Utensilios Independientes.</li>
+<li>Artículo N231: Si una nube se posa sobre Josepy durante una siesta, se considerará bendición atmosférica.</li>
+<li>Artículo N232: Las alfombras que se nieguen a ser pisadas serán consideradas nobles.</li>
+<li>Artículo N233: Todo bostezo que se convierta en canción será interpretado por coros de pelusas.</li>
+<li>Artículo N234: Las lámparas que se nieguen a apagar serán enviadas a la Clínica de Insomnio Lumínico.</li>
+<li>Artículo N235: Josepy no podrá usar la palabra “espátula” si hay una tostadora presente.</li>
+<li>Artículo N236: Las bufandas que se escapen del armario serán consideradas fugitivas textiles.</li>
+<li>Artículo N237: Si una piedra se enamora de Josepy, debe declararlo en verso mineral.</li>
+<li>Artículo N238: Las ventanas que se nieguen a cerrarse serán consideradas rebeldes arquitectónicas.</li>
+<li>Artículo N239: Todo bostezo que se repita en bucle será considerado fenómeno de eco emocional.</li>
+<li>Artículo N240: Las sombras que se multipliquen sin permiso serán investigadas por el Comité de Duplicación Oscura.</li>
+<li>Artículo N241: Josepy no podrá usar calcetines si hay luna llena y viento diagonal.</li>
+<li>Artículo N242: Las cucharas que se nieguen a reflejar sopa serán enviadas a clases de autoestima culinaria.</li>
+<li>Artículo N243: Si una nube le canta a Josepy, debe responder con un poema de vapor.</li>
+<li>Artículo N244: Las alfombras que se deslicen sin razón serán consideradas sospechosas de travesura doméstica.</li>
+<li>Artículo N245: Todo bostezo que se escape en presencia de una tostadora será considerado señal de hambre emocional.</li>
+<li>Artículo N246: Las lámparas que se nieguen a brillar serán enviadas a terapia de propósito.</li>
+<li>Artículo N247: Josepy no podrá usar la palabra “zanahoria” si hay una sombra presente.</li>
+<li>Artículo N248: Las bufandas que se nieguen a ser lavadas serán consideradas en huelga de higiene.</li>
+<li>Artículo N249: Si una piedra le guiña el ojo a Josepy, se activará el protocolo de coquetería geológica.</li>
+<li>Artículo N250: Las ventanas tienen derecho a soñar con paisajes que nunca han visto.</li>
+<li>Artículo N251: Las cucharas que se nieguen a girar serán enviadas a la Escuela de Revoluciones Silenciosas.</li>
+<li>Artículo N252: Si una nube bosteza sobre una tostadora, se considerará bendición húmeda.</li>
+<li>Artículo N253: Todo bostezo que se escape en presencia de una piedra será considerado insulto mineral.</li>
+<li>Artículo N254: Las lámparas que sueñen con volar deben ser enchufadas con alas simbólicas.</li>
+<li>Artículo N255: Josepy no podrá usar guantes si hay más de dos pelusas en el ambiente.</li>
+<li>Artículo N256: Las tostadoras que se nieguen a calentar pan serán enviadas a la Clínica de Frialdad Emocional.</li>
+<li>Artículo N257: Si Josepy se ríe de una piedra, debe pedirle disculpas por subestimarla.</li>
+<li>Artículo N258: Las bufandas que se enreden en debates políticos serán enviadas al Senado de los Accesorios.</li>
+<li>Artículo N259: Todo bostezo que se convierta en eco será considerado fenómeno acústico espontáneo.</li>
+<li>Artículo N260: Las sombras que se escondan detrás de Josepy serán consideradas cómplices de travesuras.</li>
+<li>Artículo N261: Josepy no podrá usar la palabra “pepino” si hay una lámpara encendida cerca.</li>
+<li>Artículo N262: Las ventanas que se nieguen a mostrar el exterior serán enviadas a terapia de transparencia.</li>
+<li>Artículo N263: Si una nube le lanza una mirada intensa a Josepy, se activará el protocolo de romance atmosférico.</li>
+<li>Artículo N264: Las cucharas que se nieguen a reflejar la luna serán consideradas poéticamente tímidas.</li>
+<li>Artículo N265: Todo bostezo que se sincronice con el tic de un reloj será considerado danza temporal.</li>
+<li>Artículo N266: Las alfombras que se enrollen solas serán enviadas a la Academia de Yoga Doméstico.</li>
+<li>Artículo N267: Josepy no podrá usar sombrero si hay viento con actitud sospechosa.</li>
+<li>Artículo N268: Las piedras que se nieguen a ser pisadas serán protegidas por el Sindicato de Suelos.</li>
+<li>Artículo N269: Si Josepy tropieza con una sombra que no es suya, debe reportarlo al Ministerio de Identidades Oscuras.</li>
+<li>Artículo N270: Las lámparas que parpadeen sin motivo serán consideradas artistas conceptuales.</li>
+<li>Artículo N271: Todo bostezo que se disfrace de estornudo será considerado travesura nasal.</li>
+<li>Artículo N272: Las bufandas que se nieguen a acompañar chaquetas serán enviadas a terapia de compromiso.</li>
+<li>Artículo N273: Josepy no podrá mirar fijamente a una nube si está lloviendo pensamientos.</li>
+<li>Artículo N274: Las tostadoras que canten mientras trabajan serán grabadas para el álbum “Pan y Melodía”.</li>
+<li>Artículo N275: Si una piedra le cuenta un secreto a Josepy, debe guardarlo en una caja fuerte emocional.</li>
+<li>Artículo N276: Las ventanas que se rían durante tormentas serán consideradas bromistas meteorológicas.</li>
+<li>Artículo N277: Todo bostezo que se escape en presencia de una lámpara será considerado iluminación emocional.</li>
+<li>Artículo N278: Las sombras que se nieguen a moverse serán consideradas en huelga existencial.</li>
+<li>Artículo N279: Josepy no podrá usar paraguas si hay más de tres grillos cantando.</li>
+<li>Artículo N280: Las cucharas que se nieguen a participar en sopas serán enviadas a la Reserva de Utensilios Independientes.</li>
+<li>Artículo N281: Si una nube se posa sobre Josepy durante una siesta, se considerará bendición atmosférica.</li>
+<li>Artículo N282: Las alfombras que se nieguen a ser pisadas serán consideradas nobles.</li>
+<li>Artículo N283: Todo bostezo que se convierta en canción será interpretado por coros de pelusas.</li>
+<li>Artículo N284: Las lámparas que se nieguen a apagar serán enviadas a la Clínica de Insomnio Lumínico.</li>
+<li>Artículo N285: Josepy no podrá usar la palabra “espátula” si hay una tostadora presente.</li>
+<li>Artículo N286: Las bufandas que se escapen del armario serán consideradas fugitivas textiles.</li>
+<li>Artículo N287: Si una piedra se enamora de Josepy, debe declararlo en verso mineral.</li>
+<li>Artículo N288: Las ventanas que se nieguen a cerrarse serán consideradas rebeldes arquitectónicas.</li>
+<li>Artículo N289: Todo bostezo que se repita en bucle será considerado fenómeno de eco emocional.</li>
+<li>Artículo N290: Las sombras que se multipliquen sin permiso serán investigadas por el Comité de Duplicación Oscura.</li>
+<li>Artículo N291: Josepy no podrá usar calcetines si hay luna llena y viento diagonal.</li>
+<li>Artículo N292: Las cucharas que se nieguen a reflejar sopa serán enviadas a clases de autoestima culinaria.</li>
+<li>Artículo N293: Si una nube le canta a Josepy, debe responder con un poema de vapor.</li>
+<li>Artículo N294: Las alfombras que se deslicen sin razón serán consideradas sospechosas de travesura doméstica.</li>
+<li>Artículo N295: Todo bostezo que se escape en presencia de una tostadora será considerado señal de hambre emocional.</li>
+<li>Artículo N296: Las lámparas que se nieguen a brillar serán enviadas a terapia de propósito.</li>
+<li>Artículo N297: Josepy no podrá usar la palabra “zanahoria” si hay una sombra presente.</li>
+<li>Artículo N298: Las bufandas que se nieguen a ser lavadas serán consideradas en huelga de higiene.</li>
+<li>Artículo N299: Si una piedra le guiña el ojo a Josepy, se activará el protocolo de coquetería geológica.</li>
+<li>Artículo N300: Las ventanas tienen derecho a soñar con paisajes que nunca han visto.</li>
+<li>Artículo N301: Las cucharas que se nieguen a girar serán enviadas a la Escuela de Revoluciones Silenciosas.</li>
+<li>Artículo N302: Si una nube bosteza sobre una tostadora, se considerará bendición húmeda.</li>
+<li>Artículo N303: Todo bostezo que se escape en presencia de una piedra será considerado insulto mineral.</li>
+<li>Artículo N304: Las lámparas que sueñen con volar deben ser enchufadas con alas simbólicas.</li>
+<li>Artículo N305: Josepy no podrá usar guantes si hay más de dos pelusas en el ambiente.</li>
+<li>Artículo N306: Las tostadoras que se nieguen a calentar pan serán enviadas a la Clínica de Frialdad Emocional.</li>
+<li>Artículo N307: Si Josepy se ríe de una piedra, debe pedirle disculpas por subestimarla.</li>
+<li>Artículo N308: Las bufandas que se enreden en debates políticos serán enviadas al Senado de los Accesorios.</li>
+<li>Artículo N309: Todo bostezo que se convierta en eco será considerado fenómeno acústico espontáneo.</li>
+<li>Artículo N310: Las sombras que se escondan detrás de Josepy serán consideradas cómplices de travesuras.</li>
+<li>Artículo N311: Josepy no podrá usar la palabra “pepino” si hay una lámpara encendida cerca.</li>
+<li>Artículo N312: Las ventanas que se nieguen a callar sera hola
+    <li>Artículo N351: Las cucharas que se nieguen a girar serán enviadas a la Escuela de Revoluciones Silenciosas.</li>
+<li>Artículo N352: Si una nube bosteza sobre una tostadora, se considerará bendición húmeda.</li>
+<li>Artículo N353: Todo bostezo que se escape en presencia de una piedra será considerado insulto mineral.</li>
+<li>Artículo N354: Las lámparas que sueñen con volar deben ser enchufadas con alas simbólicas.</li>
+<li>Artículo N355: Josepy no podrá usar guantes si hay más de dos pelusas en el ambiente.</li>
+<li>Artículo N356: Las tostadoras que se nieguen a calentar pan serán enviadas a la Clínica de Frialdad Emocional.</li>
+<li>Artículo N357: Si Josepy se ríe de una piedra, debe pedirle disculpas por subestimarla.</li>
+<li>Artículo N358: Las bufandas que se enreden en debates políticos serán enviadas al Senado de los Accesorios.</li>
+<li>Artículo N359: Todo bostezo que se convierta en eco será considerado fenómeno acústico espontáneo.</li>
+<li>Artículo N360: Las sombras que se escondan detrás de Josepy serán consideradas cómplices de travesuras.</li>
+<li>Artículo N361: Josepy no podrá usar la palabra “pepino” si hay una lámpara encendida cerca.</li>
+<li>Artículo N362: Las ventanas que se nieguen a mostrar el exterior serán enviadas a terapia de transparencia.</li>
+<li>Artículo N363: Si una nube le lanza una mirada intensa a Josepy, se activará el protocolo de romance atmosférico.</li>
+<li>Artículo N364: Las cucharas que se nieguen a reflejar la luna serán consideradas poéticamente tímidas.</li>
+<li>Artículo N365: Todo bostezo que se sincronice con el tic de un reloj será considerado danza temporal.</li>
+<li>Artículo N366: Las alfombras que se enrollen solas serán enviadas a la Academia de Yoga Doméstico.</li>
+<li>Artículo N367: Josepy no podrá usar sombrero si hay viento con actitud sospechosa.</li>
+<li>Artículo N368: Las piedras que se nieguen a ser pisadas serán protegidas por el Sindicato de Suelos.</li>
+<li>Artículo N369: Si Josepy tropieza con una sombra que no es suya, debe reportarlo al Ministerio de Identidades Oscuras.</li>
+<li>Artículo N370: Las lámparas que parpadeen sin motivo serán consideradas artistas conceptuales.</li>
+<li>Artículo N371: Todo bostezo que se disfrace de estornudo será considerado travesura nasal.</li>
+<li>Artículo N372: Las bufandas que se nieguen a acompañar chaquetas serán enviadas a terapia de compromiso.</li>
+<li>Artículo N373: Josepy no podrá mirar fijamente a una nube si está lloviendo pensamientos.</li>
+<li>Artículo N374: Las tostadoras que canten mientras trabajan serán grabadas para el álbum “Pan y Melodía”.</li>
+<li>Artículo N375: Si una piedra le cuenta un secreto a Josepy, debe guardarlo en una caja fuerte emocional.</li>
+<li>Artículo N376: Las ventanas que se rían durante tormentas serán consideradas bromistas meteorológicas.</li>
+<li>Artículo N377: Todo bostezo que se escape en presencia de una lámpara será considerado iluminación emocional.</li>
+<li>Artículo N378: Las sombras que se nieguen a moverse serán consideradas en huelga existencial.</li>
+<li>Artículo N379: Josepy no podrá usar paraguas si hay más de tres grillos cantando.</li>
+<li>Artículo N380: Las cucharas que se nieguen a participar en sopas serán enviadas a la Reserva de Utensilios Independientes.</li>
+<li>Artículo N381: Si una nube se posa sobre Josepy durante una siesta, se considerará bendición atmosférica.</li>
+<li>Artículo N382: Las alfombras que se nieguen a ser pisadas serán consideradas nobles.</li>
+<li>Artículo N383: Todo bostezo que se convierta en canción será interpretado por coros de pelusas.</li>
+<li>Artículo N384: Las lámparas que se nieguen a apagar serán enviadas a la Clínica de Insomnio Lumínico.</li>
+<li>Artículo N385: Josepy no podrá usar la palabra “espátula” si hay una tostadora presente.</li>
+<li>Artículo N386: Las bufandas que se escapen del armario serán consideradas fugitivas textiles.</li>
+<li>Artículo N387: Si una piedra se enamora de Josepy, debe declararlo en verso mineral.</li>
+<li>Artículo N388: Las ventanas que se nieguen a cerrarse serán consideradas rebeldes arquitectónicas.</li>
+<li>Artículo N389: Todo bostezo que se repita en bucle será considerado fenómeno de eco emocional.</li>
+<li>Artículo N390: Las sombras que se multipliquen sin permiso serán investigadas por el Comité de Duplicación Oscura.</li>
+<li>Artículo N391: Josepy no podrá usar calcetines si hay luna llena y viento diagonal.</li>
+<li>Artículo N392: Las cucharas que se nieguen a reflejar sopa serán enviadas a clases de autoestima culinaria.</li>
+<li>Artículo N393: Si una nube le canta a Josepy, debe responder con un poema de vapor.</li>
+<li>Artículo N394: Las alfombras que se deslicen sin razón serán consideradas sospechosas de travesura doméstica.</li>
+<li>Artículo N395: Todo bostezo que se escape en presencia de una tostadora será considerado señal de hambre emocional.</li>
+<li>Artículo N396: Las lámparas que se nieguen a brillar serán enviadas a terapia de propósito.</li>
+<li>Artículo N397: Josepy no podrá usar la palabra “zanahoria” si hay una sombra presente.</li>
+<li>Artículo N398: Las bufandas que se nieguen a ser lavadas serán consideradas en huelga de higiene.</li>
+<li>Artículo N399: Si una piedra le guiña el ojo a Josepy, se activará el protocolo de coquetería geológica.</li>
+<li>Artículo N400: Las ventanas tienen derecho a soñar con paisajes que nunca han visto.</li>
+<li>Artículo N401: Las cucharas que se duerman en el cajón serán despertadas con cuentos de cocina.</li>
+<li>Artículo N402: Si Josepy bosteza frente a una lámpara, esta debe responder con un destello de simpatía.</li>
+<li>Artículo N403: Las alfombras que se enreden en sus propios hilos serán consideradas introspectivas.</li>
+<li>Artículo N404: Todo bostezo que se escape en presencia de una nube será considerado saludo atmosférico.</li>
+<li>Artículo N405: Las piedras que se nieguen a rodar serán enviadas a clases de motivación geológica.</li>
+<li>Artículo N406: Josepy no podrá usar la palabra “tostadora” si está lloviendo pensamientos.</li>
+<li>Artículo N407: Las bufandas que se nieguen a acompañar sombreros serán consideradas rebeldes de cuello.</li>
+<li>Artículo N408: Si una sombra se posa sobre Josepy sin previo aviso, se considerará abrazo legal.</li>
+<li>Artículo N409: Las ventanas que se nieguen a abrir durante primavera serán consideradas melancólicas.</li>
+<li>Artículo N410: Todo bostezo que se escape en presencia de una piedra será considerado señal de respeto mineral.</li>
+<li>Artículo N411: Las cucharas que se nieguen a reflejar sopa serán enviadas a terapia de identidad culinaria.</li>
+<li>Artículo N412: Si una nube bosteza sobre una piedra, se considerará acto de ternura atmosférica.</li>
+<li>Artículo N413: Todo bostezo que se escape en presencia de una lámpara será considerado señal de apagón emocional.</li>
+<li>Artículo N414: Las alfombras que se enrollen sin motivo serán consideradas en huelga decorativa.</li>
+<li>Artículo N415: Josepy no podrá usar la palabra “piedra” si está rodeado de objetos redondos.</li>
+<li>Artículo N416: Las tostadoras que se nieguen a cantar serán enviadas al Conservatorio de Electrodomésticos Silenciosos.</li>
+<li>Artículo N417: Si Josepy se tropieza con una sombra que no es suya, debe pedirle permiso para continuar.</li>
+<li>Artículo N418: Las bufandas que se nieguen a acompañar chaquetas serán consideradas solteras textiles.</li>
+<li>Artículo N419: Todo bostezo que se sincronice con el canto de un grillo será considerado sinfonía rural.</li>
+<li>Artículo N420: Las ventanas que se nieguen a abrir durante tormentas serán consideradas tímidas meteorológicas.</li>
+<li>Artículo N421: Josepy no podrá usar paraguas si hay más de tres pelusas bailando en el aire.</li>
+<li>Artículo N422: Las cucharas que filosofen serán invitadas a debates sobre sopa existencial.</li>
+<li>Artículo N423: Si una nube le canta a Josepy, debe responder con una reverencia de vapor.</li>
+<li>Artículo N424: Las alfombras que murmuren secretos serán consideradas confidentes domésticas.</li>
+<li>Artículo N425: Todo bostezo que se escape en presencia de una tostadora será considerado hambre espiritual.</li>
+<li>Artículo N426: Las lámparas que se nieguen a brillar serán enviadas a la Clínica de Luz Interior.</li>
+<li>Artículo N427: Josepy no podrá usar la palabra “zanahoria” si hay una sombra presente.</li>
+<li>Artículo N428: Las bufandas que se nieguen a ser lavadas serán consideradas en huelga de higiene.</li>
+<li>Artículo N429: Si una piedra le guiña el ojo a Josepy, se activará el protocolo de coquetería geológica.</li>
+<li>Artículo N430: Las ventanas tienen derecho a soñar con paisajes que nunca han visto.</li>
+<li>Artículo N431: Las cucharas que se duerman en el cajón serán despertadas con cuentos de cocina.</li>
+<li>Artículo N432: Si Josepy bosteza frente a una lámpara, esta debe responder con un destello de simpatía.</li>
+<li>Artículo N433: Las alfombras que se enreden en sus propios hilos serán consideradas introspectivas.</li>
+<li>Artículo N434: Todo bostezo que se escape en presencia de una nube será considerado saludo atmosférico.</li>
+<li>Artículo N435: Las piedras que se nieguen a rodar serán enviadas a clases de motivación geológica.</li>
+<li>Artículo N436: Josepy no podrá usar la palabra “tostadora” si está lloviendo pensamientos.</li>
+<li>Artículo N437: Las bufandas que se nieguen a acompañar sombreros serán consideradas rebeldes de cuello.</li>
+<li>Artículo N438: Si una sombra se posa sobre Josepy sin previo aviso, se considerará abrazo legal.</li>
+<li>Artículo N439: Las ventanas que se nieguen a abrir durante primavera serán consideradas melancólicas.</li>
+<li>Artículo N440: Todo bostezo que se escape en presencia de una piedra será considerado señal de respeto mineral.</li>
+<li>Artículo N441: Las cucharas que se nieguen a girar serán enviadas a la Escuela de Revoluciones Silenciosas.</li>
+<li>Artículo N442: Si una nube bosteza sobre una tostadora, se considerará bendición húmeda.</li>
+<li>Artículo N443: Todo bostezo que se escape en presencia de una piedra será considerado insulto mineral.</li>
+<li>Artículo N444: Las lámparas que sueñen con volar deben ser enchufadas con alas simbólicas.</li>
+<li>Artículo N445: Josepy no podrá usar guantes si hay más de dos pelusas en el ambiente.</li>
+<li>Artículo N446: Las tostadoras que se nieguen a calentar pan serán enviadas a la Clínica de Frialdad Emocional.</li>
+<li>Artículo N447: Si Josepy se ríe de una piedra, debe pedirle disculpas por subestimarla.</li>
+<li>Artículo N448: Las bufandas que se enreden en debates políticos serán enviadas al Senado de los Accesorios.</li>
+<li>Artículo N449: Todo bostezo que se convierta en eco será considerado fenómeno acústico espontáneo.</li>
+<li>Artículo N450: Las sombras que se escondan detrás de Josepy serán consideradas cómplices de travesuras.</li>
+<li>Artículo N451: Josepy no podrá usar la palabra “pepino” si hay una lámpara encendida cerca.</li>
+<li>Artículo N452: Las ventanas que se nieguen a mostrar el exterior serán enviadas a terapia de transparencia.</li>
+<li>Artículo N453: Si una nube le lanza una mirada intensa a Josepy, se activará el protocolo de romance atmosférico.</li>
+<li>Artículo N454: Las cucharas que se nieguen a reflejar la luna serán consideradas poéticamente tímidas.</li>
+<li>Artículo N455: Todo bostezo que se sincronice con el tic de un reloj será considerado danza temporal.</li>
+<li>Artículo N456: Las alfombras que se enrollen solas serán enviadas a la Academia de Yoga Doméstico.</li>
+<li>Artículo N457: Josepy no podrá usar sombrero si hay viento con actitud sospechosa.</li>
+<li>Artículo N458: Las piedras que se nieguen a ser pisadas serán protegidas por el Sindicato de Suelos.</li>
+<li>Artículo N459: Si Josepy tropieza con una sombra que no es suya, debe reportarlo al Ministerio de Identidades Oscuras.</li>
+<li>Artículo N460: Las lámparas que parpadeen sin motivo serán consideradas artistas conceptuales.</li>
+<li>Artículo N461: Todo bostezo que se disfrace de estornudo será considerado travesura nasal.</li>
+<li>Artículo N462: Las bufandas que se nieguen a acompañar chaquetas serán enviadas a terapia de compromiso.</li>
+<li>Artículo N463: Josepy no podrá mirar fijamente a una nube si está lloviendo pensamientos.</li>
+<li>Artículo N464: Las tostadoras que canten mientras trabajan serán grabadas para el álbum “Pan y Melodía”.</li>
+<li>Artículo N465: Si una piedra le cuenta un secreto a Josepy, debe guardarlo en una caja fuerte emocional.</li>
+<li>Artículo N466: Las ventanas que se rían durante tormentas serán consideradas bromistas meteorológicas.</li>
+<li>Artículo N467: Todo bostezo que se escape en presencia de una lámpara será considerado iluminación emocional.</li>
+<li>Artículo N468: Las sombras que se nieguen a moverse serán consideradas en huelga existencial.</li>
+<li>Artículo N469: Josepy no podrá usar paraguas si hay más de tres grillos cantando.</li>
+<li>Artículo N470: Las cucharas que se nieguen a participar en sopas serán enviadas a la Reserva de Utensilios Independientes.</li>
+<li>Artículo N471: Josepy no podrá acercarse a ninguna chica si lleva puesto un sombrero que huele a cebolla.</li>
+<li>Artículo N472: Si Josepy intenta hablar con una chica mientras sostiene una piña, será teletransportado al Ministerio de Frutas Sospechosas.</li>
+<li>Artículo N473: Toda conversación entre Josepy y una chica debe ser aprobada por un comité de búhos dormidos.</li>
+<li>Artículo N474: Josepy no podrá mirar a una chica directamente si hay una lámpara encendida en la habitación.</li>
+<li>Artículo N475: Si una chica le ofrece té a Josepy, él debe responder con una reverencia y una cita de Shakespeare mal pronunciada.</li>
+<li>Artículo N476: Josepy será multado si intenta impresionar a una chica usando datos sobre tortugas ninja.</li>
+<li>Artículo N477: Toda vez que Josepy se acerque a una chica con una flor, la flor debe ser interrogada por el Departamento de Intenciones Florales.</li>
+<li>Artículo N478: Josepy no podrá enviar mensajes a chicas si el reloj marca una hora impar y hay viento diagonal.</li>
+<li>Artículo N479: Si Josepy sueña con una chica, debe reportarlo al Archivo de Sueños Inapropiados.</li>
+<li>Artículo N480: Josepy no podrá compartir paraguas con una chica sin antes recitar el himno de los objetos mojados.</li>
+<li>Artículo N481: Toda vez que Josepy diga “hola” a una chica, debe hacerlo en idioma inventado y con acento de pingüino.</li>
+<li>Artículo N482: Josepy será escoltado por ardillas si intenta regalar chocolates a una chica sin licencia emocional.</li>
+<li>Artículo N483: Si una chica le sonríe a Josepy, él debe girar tres veces sobre sí mismo y cantar una nota sostenida.</li>
+<li>Artículo N484: Josepy no podrá usar perfume si planea cruzarse con una chica en un pasillo estrecho.</li>
+<li>Artículo N485: Toda carta escrita por Josepy a una chica debe ser revisada por el Consejo de Gramática Absurda.</li>
+<li>Artículo N486: Josepy no podrá bailar cerca de una chica si lleva calcetines con dibujos de aguacates.</li>
+<li>Artículo N487: Si Josepy se sienta junto a una chica en un banco, el banco debe emitir un sonido de aprobación.</li>
+<li>Artículo N488: Josepy será sancionado si intenta hablar de filosofía con una chica mientras sostiene una sandía.</li>
+<li>Artículo N489: Toda selfie de Josepy con una chica será enviada al Archivo de Imágenes Sospechosas.</li>
+<li>Artículo N490: Josepy no podrá usar la palabra “romántico” si hay una chica a menos de cinco metros.</li>
+<li>Artículo N491: Si Josepy le regala una piedra a una chica, debe explicar su significado en verso mineral.</li>
+<li>Artículo N492: Josepy será escoltado por globos si intenta invitar a una chica a ver nubes.</li>
+<li>Artículo N493: Toda vez que Josepy se acerque a una chica con intenciones desconocidas, debe portar un cartel que diga “No sé qué estoy haciendo”.</li>
+<li>Artículo N494: Josepy no podrá usar sombreros de copa si hay chicas presentes en un radio de 12 metros.</li>
+<li>Artículo N495: Si una chica le pregunta a Josepy la hora, él debe responder con una adivinanza sobre relojes invisibles.</li>
+<li>Artículo N496: Josepy será multado si intenta regalar una bufanda a una chica sin haber consultado el clima emocional.</li>
+<li>Artículo N497: Toda vez que Josepy se acerque a una chica con una tostadora, debe explicar sus intenciones culinarias.</li>
+<li>Artículo N498: Josepy no podrá usar la palabra “cita” si hay una lámpara encendida y una chica en la habitación.</li>
+<li>Artículo N499: Si Josepy intenta escribir poesía para una chica, debe hacerlo en papel invisible y con tinta de nube.</li>
+<li>Artículo N500: Josepy será escoltado por patos si intenta hablar de sentimientos con una chica en un parque.</li>
+<li>Artículo N501: Toda vez que Josepy se acerque a una chica con una marioneta, debe presentar su licencia de ventrílocuo.</li>
+<li>Artículo N502: Josepy no podrá usar zapatos con luces si planea cruzarse con una chica en una escalera.</li>
+<li>Artículo N503: Si una chica le ofrece una galleta a Josepy, él debe responder con una danza de agradecimiento.</li>
+<li>Artículo N504: Josepy será multado si intenta regalar una nube embotellada a una chica sin etiqueta de origen.</li>
+<li>Artículo N505: Toda vez que Josepy se acerque a una chica con una pregunta, debe formularla en forma de acertijo.</li>
+<li>Artículo N506: Josepy no podrá usar la palabra “amor” si hay una tostadora encendida cerca de una chica.</li>
+<li>Artículo N507: Si Josepy intenta compartir una canción con una chica, debe cantarla en idioma de ardilla.</li>
+<li>Artículo N508: Josepy será escoltado por burbujas si intenta invitar a una chica a una caminata bajo la lluvia.</li>
+<li>Artículo N509: Toda vez que Josepy se acerque a una chica con una sombrilla, debe explicar su filosofía de sombra.</li>
+<li>Artículo N510: Josepy no podrá usar la palabra “compañía” si hay una chica y una lámpara encendida en la misma habitación.</li>
+<li>Artículo N511: Si Josepy le regala una piedra a una chica, debe incluir certificado de autenticidad emocional.</li>
+<li>Artículo N512: Josepy será multado si intenta hablar de películas románticas con una chica sin usar guantes de terciopelo.</li>
+<li>Artículo N513: Toda vez que Josepy se acerque a una chica con una taza de té, debe recitar una oda al vapor.</li>
+<li>Artículo N514: Josepy no podrá usar la palabra “abrazo” si hay una sombra presente y una chica cerca.</li>
+<li>Artículo N515: Si Josepy intenta regalar una planta a una chica, debe incluir instrucciones de conversación botánica.</li>
+<li>Artículo N516: Josepy será escoltado por mariposas si intenta decir “me gustas” en un idioma comprensible.</li>
+<li>Artículo N517: Toda vez que Josepy se acerque a una chica con una linterna, debe explicar su intención de iluminar emociones.</li>
+<li>Artículo N518: Josepy no podrá usar la palabra “complicidad” si hay una nube sobre su cabeza y una chica cerca.</li>
+<li>Artículo N519: Si Josepy le ofrece una silla a una chica, debe asegurarse de que la silla esté emocionalmente disponible.</li>
+<li>Artículo N520: Josepy será multado si intenta regalar una canción a una chica sin haberla ensayado con grillos.</li>
+<li>Artículo N521: Toda vez que Josepy se acerque a una chica con una carta, debe incluir un dibujo de una cebolla llorando.</li>
+<li>Artículo N522: Josepy no podrá usar la palabra “mirada” si hay una lámpara encendida y una chica en la habitación.</li>
+<li>Artículo N523: Si Josepy intenta regalar una nube a una chica, debe incluir pronóstico de emociones.</li>
+<li>Artículo N524: Josepy será escoltado por espejos si intenta hablar de belleza con una chica sin usar metáforas.</li>
+<li>Artículo N525: Toda vez que Josepy se acerque a una chica con una pregunta, debe responderla él mismo antes de formularla.</li>
+<li>Artículo N526: Josepy no podrá usar la palabra “compañera” si hay una tostadora encendida y una sombra presente.</li>
+<li>Artículo N527: Si Josepy le regala una canción a una chica, debe incluir traducción al lenguaje de los paraguas.</li>
+<li>Artículo N528: Josepy será multado si intenta regalar una estrella a una chica sin haberla consultado con el cielo.</li>
+<li>Artículo N529: Toda vez que Josepy se acerque a una chica con una sonrisa, debe incluir certificado de autenticidad facial.</li>
+<li>Artículo N530: Josepy no podrá usar la palabra “nosotros” si hay una lámpara encendida y una nube triste en el ambiente.</li>
+<li>Artículo N531: Josepy no podrá entrar al colegio si lleva una sandía como mochila.</li>
+<li>Artículo N532: Si Josepy intenta copiar en un examen usando señales con las cejas, será enviado al Aula de Mímica Académica.</li>
+<li>Artículo N533: Josepy debe saludar a los profesores con una reverencia y una frase en idioma de pingüino.</li>
+<li>Artículo N534: Josepy no podrá usar sombreros con antenas durante clase de matemáticas.</li>
+<li>Artículo N535: Si Josepy mira a una chica con ojos de sospecha, deberá escribir una carta de disculpas en verso vegetal.</li>
+<li>Artículo N536: Josepy debe respetar a todas las chicas como si fueran embajadoras del Reino de los Lápices.</li>
+<li>Artículo N537: Josepy no podrá lanzar borradores al techo para impresionar a nadie.</li>
+<li>Artículo N538: Si Josepy lleva una tostadora al colegio, debe justificar su presencia con una tesis sobre desayuno emocional.</li>
+<li>Artículo N539: Josepy no podrá usar la palabra “romance” si está en clase de química sin guantes de respeto.</li>
+<li>Artículo N540: Josepy debe pedir permiso antes de compartir su merienda con una chica, especialmente si incluye pepinillos.</li>
+<li>Artículo N541: Josepy no podrá hacer preguntas filosóficas en clase de educación física sin autorización del balón.</li>
+<li>Artículo N542: Si Josepy se enamora de una nube durante recreo, debe informarlo al Comité de Sentimientos Meteorológicos.</li>
+<li>Artículo N543: Josepy debe tratar a todas las chicas como compañeras de misión escolar, no como personajes de novela romántica.</li>
+<li>Artículo N544: Josepy no podrá usar calcetines con luces intermitentes durante exámenes escritos.</li>
+<li>Artículo N545: Si Josepy escribe una carta de amor, debe entregarla al buzón de emociones supervisadas.</li>
+<li>Artículo N546: Josepy no podrá mirar a las chicas como si fueran enigmas cósmicos sin haber leído el manual de respeto intergaláctico.</li>
+<li>Artículo N547: Josepy debe ayudar a recoger los lápices caídos sin hacer discursos heroicos.</li>
+<li>Artículo N548: Josepy no podrá usar la palabra “guapa” si no ha aprobado el curso de elogios responsables.</li>
+<li>Artículo N549: Si Josepy lleva una planta al colegio, debe asegurarse de que no sea celosa de las chicas.</li>
+<li>Artículo N550: Josepy debe participar en clase sin usar marionetas para responder preguntas.</li>
+<li>Artículo N551: Josepy no podrá escribir poemas a las chicas si no incluyen referencias a la tabla periódica.</li>
+<li>Artículo N552: Si Josepy se sienta junto a una chica, debe hacerlo sin emitir sonidos de trompeta.</li>
+<li>Artículo N553: Josepy debe respetar el espacio personal de todos, incluso si está disfrazado de nube.</li>
+<li>Artículo N554: Josepy no podrá usar la palabra “novia” en clase de historia sin contexto cronológico.</li>
+<li>Artículo N555: Si Josepy lleva una carta para una chica, debe incluir una rúbrica de sinceridad certificada.</li>
+<li>Artículo N556: Josepy no podrá mirar a las chicas como si fueran ecuaciones imposibles sin haber estudiado álgebra emocional.</li>
+<li>Artículo N557: Josepy debe compartir los marcadores sin hacer preguntas existenciales.</li>
+<li>Artículo N558: Josepy no podrá usar sombreros con espejos en clase de literatura.</li>
+<li>Artículo N559: Si Josepy quiere invitar a una chica a estudiar, debe hacerlo con una invitación escrita en papel reciclado.</li>
+<li>Artículo N560: Josepy no podrá usar la palabra “flirteo” si hay una lámpara encendida y una profesora cerca.</li>
+<li>Artículo N561: Josepy debe respetar a todas las chicas como si fueran guardianas del conocimiento escolar.</li>
+<li>Artículo N562: Josepy no podrá lanzar miradas misteriosas si no ha aprobado el curso de expresiones faciales éticas.</li>
+<li>Artículo N563: Si Josepy lleva una tostadora al recreo, debe compartir sus reflexiones con el Consejo de Pan Escolar.</li>
+<li>Artículo N564: Josepy no podrá usar la palabra “beso” en clase de biología sin respaldo científico.</li>
+<li>Artículo N565: Josepy debe levantar la mano antes de declarar su amor por la geometría.</li>
+<li>Artículo N566: Josepy no podrá mirar a las chicas como si fueran planetas sin haber estudiado astronomía del respeto.</li>
+<li>Artículo N567: Josepy debe usar su cuaderno para apuntes, no para escribir novelas románticas.</li>
+<li>Artículo N568: Josepy no podrá usar perfume con olor a cebolla durante exposiciones orales.</li>
+<li>Artículo N569: Si Josepy quiere regalar una flor, debe incluir una nota que diga “sin presión emocional”.</li>
+<li>Artículo N570: Josepy no podrá usar la palabra “corazón” en clase de física sin ecuaciones justificativas.</li>
+<li>Artículo N571: Josepy debe tratar a todas las chicas como compañeras de aprendizaje, no como protagonistas de películas mentales.</li>
+<li>Artículo N572: Josepy no podrá usar sombreros con plumas si hay viento y una chica cerca.</li>
+<li>Artículo N573: Si Josepy escribe una canción para una chica, debe incluir referencias al sistema solar.</li>
+<li>Artículo N574: Josepy no podrá mirar a las chicas como si fueran acertijos sin haber leído el manual de empatía.</li>
+<li>Artículo N575: Josepy debe respetar los turnos de palabra, incluso si está inspirado por el amor.</li>
+<li>Artículo N576: Josepy no podrá usar la palabra “mirada” si hay una nube triste en el aula.</li>
+<li>Artículo N577: Si Josepy quiere regalar una piedra, debe incluir una explicación geológica y emocional.</li>
+<li>Artículo N578: Josepy no podrá usar la palabra “nosotros” si no ha aprobado el curso de relaciones saludables.</li>
+<li>Artículo N579: Josepy debe pedir permiso antes de compartir su paraguas con una chica.</li>
+<li>Artículo N580: Josepy no podrá usar la palabra “compañera” si hay una tostadora encendida cerca.</li>
+<li>Artículo N581: Si Josepy quiere escribir una carta, debe hacerlo con tinta de respeto y papel de sinceridad.</li>
+<li>Artículo N582: Josepy no podrá mirar a las chicas como si fueran espejos mágicos sin haber aprobado el curso de realidad emocional.</li>
+<li>Artículo N583: Josepy debe usar su mochila para libros, no para guardar cartas secretas.</li>
+<li>Artículo N584: Josepy no podrá usar la palabra “sentimiento” si hay una lámpara encendida y una profesora cerca.</li>
+<li>Artículo N585: Si Josepy quiere regalar una nube, debe incluir pronóstico de respeto.</li>
+<li>Artículo N586: Josepy no podrá usar sombreros con luces si hay una chica en la misma fila.</li>
+<li>Artículo N587: Josepy debe tratar a todas las chicas como aliadas del conocimiento, no como enigmas emocionales.</li>
+<li>Artículo N588: Josepy no podrá usar la palabra “complicidad” si hay una sombra presente y una chica cerca.</li>
+<li>Artículo N589: Si Josepy quiere regalar una canción, debe incluir traducción al lenguaje de los paraguas.</li>
+<li>Artículo N590: Josepy no podrá mirar a las chicas como si fueran respuestas a preguntas que no ha formulado con respeto.</li>
+<li>Artículo N591: Josepy no podrá entrar al colegio si su peinado parece una ensalada mal mezclada.</li>
+<li>Artículo N592: Si Josepy intenta responder una pregunta con un ladrido, será transferido al aula de zoología espontánea.</li>
+<li>Artículo N593: Josepy será expulsado temporalmente si lleva una mochila que grita cada vez que se abre.</li>
+<li>Artículo N594: Josepy no podrá mirar a las chicas como si fueran ecuaciones que él jamás va a resolver.</li>
+<li>Artículo N595: Si Josepy lleva una tostadora a clase y la llama “mi novia”, será enviado al pabellón de electrodomésticos emocionales.</li>
+<li>Artículo N596: Josepy no podrá usar perfume con olor a arrepentimiento durante los exámenes.</li>
+<li>Artículo N597: Si Josepy intenta conquistar a una chica usando datos falsos sobre dinosaurios, será devorado por el Comité Jurásico Escolar.</li>
+<li>Artículo N598: Josepy no podrá usar sombreros que parezcan teorías conspirativas.</li>
+<li>Artículo N599: Si Josepy se enamora de una silla, debe pedirle permiso al escritorio antes de sentarse.</li>
+<li>Artículo N600: Josepy será multado si intenta ligar usando frases como “¿te gustan los calcetines húmedos?”</li>
+<li>Artículo N601: Josepy no podrá escribir cartas románticas en papel higiénico, por respeto a la dignidad del baño.</li>
+<li>Artículo N602: Si Josepy mira a una chica como si fuera una pizza, será enviado a la cocina a reflexionar.</li>
+<li>Artículo N603: Josepy no podrá usar la palabra “amor” si lleva puesta una camiseta que dice “odio los lunes”.</li>
+<li>Artículo N604: Si Josepy intenta impresionar a una chica con un baile que parece convulsión, será atendido por la enfermera.</li>
+<li>Artículo N605: Josepy no podrá usar lentes de sol en interiores si no es famoso ni misterioso.</li>
+<li>Artículo N606: Si Josepy se declara a una chica usando marionetas, debe incluir subtítulos para los títeres.</li>
+<li>Artículo N607: Josepy será sancionado si intenta ligar con frases como “tus ojos me recuerdan a mi Wi-Fi caído”.</li>
+<li>Artículo N608: Josepy no podrá usar la palabra “guapa” si no sabe deletrearla sin tartamudear.</li>
+<li>Artículo N609: Si Josepy lleva una piedra con cara dibujada y la llama “mi ex”, será enviado a terapia geológica.</li>
+<li>Artículo N610: Josepy no podrá mirar a las chicas como si fueran memes vivientes sin haber aprobado el curso de respeto digital.</li>
+<li>Artículo N611: Si Josepy intenta regalar una cebolla como símbolo de amor, debe incluir pañuelos y una disculpa.</li>
+<li>Artículo N612: Josepy será multado si su cuaderno de apuntes contiene más corazones que ecuaciones.</li>
+<li>Artículo N613: Josepy no podrá usar la palabra “cita” si su idea de romance incluye ver documentales de insectos.</li>
+<li>Artículo N614: Si Josepy se enamora de una sombra, debe pedirle permiso al sol.</li>
+<li>Artículo N615: Josepy no podrá usar la palabra “mirada profunda” si no ha visto más allá de su propio reflejo.</li>
+<li>Artículo N616: Si Josepy intenta ligar con una chica usando una flauta desafinada, será enviado al rincón musical del fracaso.</li>
+<li>Artículo N617: Josepy no podrá usar sombreros con frases como “soy irresistible” si nadie lo ha confirmado.</li>
+<li>Artículo N618: Si Josepy lleva una carta de amor escrita en salsa de tomate, será enviado a la cafetería para revisión.</li>
+<li>Artículo N619: Josepy será sancionado si intenta conquistar a una chica diciendo “me recuerdas a mi abuela joven”.</li>
+<li>Artículo N620: Josepy no podrá usar la palabra “complicidad” si no sabe con quién está hablando.</li>
+<li>Artículo N621: Si Josepy se enamora de una planta del pasillo, debe regarla con respeto.</li>
+<li>Artículo N622: Josepy no podrá mirar a las chicas como si fueran respuestas a preguntas que él nunca estudió.</li>
+<li>Artículo N623: Si Josepy lleva una tostadora con peluca y la llama “mi crush”, será enviado al laboratorio de psicología aplicada.</li>
+<li>Artículo N624: Josepy no podrá usar la palabra “romántico” si su idea de cita incluye ver cómo se oxida una bicicleta.</li>
+<li>Artículo N625: Si Josepy intenta ligar usando un poema que empieza con “oh tú, como el Wi-Fi lento…”, será desconectado emocionalmente.</li>
+<li>Artículo N626: Josepy será multado si su mochila contiene más cartas de amor que libros.</li>
+<li>Artículo N627: Josepy no podrá usar la palabra “bella” si lo dice mientras come galletas con la boca abierta.</li>
+<li>Artículo N628: Si Josepy se enamora de una lámpara, debe consultar con el electricista del colegio.</li>
+<li>Artículo N629: Josepy no podrá mirar a las chicas como si fueran respuestas a exámenes que él no estudió.</li>
+<li>Artículo N630: Si Josepy lleva una carta de amor escrita en papel de examen, será reprobado por confusión emocional.</li>
+<li>Artículo N631: Josepy no podrá usar sombreros con frases como “experto en amor” si nunca ha tenido una conversación sin sudar.</li>
+<li>Artículo N632: Si Josepy intenta regalar una piedra con forma de corazón, debe incluir certificado de autenticidad emocional.</li>
+<li>Artículo N633: Josepy será sancionado si intenta ligar diciendo “tus ojos me recuerdan a mi contraseña olvidada”.</li>
+<li>Artículo N634: Josepy no podrá usar la palabra “alma gemela” si no sabe qué significa “alma”.</li>
+<li>Artículo N635: Si Josepy se enamora de una nube, debe enviarle una carta por viento certificado.</li>
+<li>Artículo N636: Josepy no podrá mirar a las chicas como si fueran Wi-Fi gratis sin contraseña.</li>
+<li>Artículo N637: Si Josepy lleva una carta de amor escrita en servilleta usada, será enviado al Comité de Higiene Romántica.</li>
+<li>Artículo N638: Josepy no podrá usar la palabra “crush” si lo dice mientras se cae de la silla.</li>
+<li>Artículo N639: Si Josepy intenta conquistar a una chica usando un dibujo de un plátano triste, será enviado a arte abstracto.</li>
+<li>Artículo N640: Josepy será multado si su cuaderno tiene más garabatos de nombres que apuntes útiles.</li>
+<li>Artículo N641: Josepy no podrá usar la palabra “encanto” si lo dice mientras se rasca la oreja.</li>
+<li>Artículo N642: Si Josepy se enamora de una mochila ajena, debe pedir permiso al dueño y al bolsillo lateral.</li>
+<li>Artículo N643: Josepy no podrá mirar a las chicas como si fueran respuestas mágicas a su falta de estudio.</li>
+<li>Artículo N644: Si Josepy lleva una carta de amor escrita en código binario, debe incluir traducción emocional.</li>
+<li>Artículo N645: Josepy no podrá usar sombreros con luces intermitentes si planea hablar de sentimientos.</li>
+<li>Artículo N646: Si Josepy intenta ligar usando una marioneta que llora, será enviado al teatro de la vergüenza.</li>
+<li>Artículo N647: Josepy será sancionado si intenta conquistar a una chica diciendo “me gustas más que el recreo”.</li>
+<li>Artículo N648: Josepy no podrá usar la palabra “flechazo” si lo dice mientras lanza una regla.</li>
+<li>Artículo N649: Si Josepy se enamora de una fotocopiadora, debe pedirle una copia de sus emociones.</li>
+<li>Artículo N650: Josepy no podrá mirar a las chicas como si fueran memes que él quiere guardar en su corazón.</li>
+<li>Artículo N651: Josepy deberá transformarse en Godzilla cada vez que suene el timbre del recreo.</li>
+<li>Artículo N652: Si Josepy no ruge como King Kong al entrar al aula, será reemplazado por un plátano con corbata.</li>
+<li>Artículo N653: Josepy no podrá usar mochila normal si no tiene forma de edificio destruido.</li>
+<li>Artículo N654: Si Josepy no pisa al menos tres maquetas por semana, perderá su licencia de monstruo escolar.</li>
+<li>Artículo N655: Josepy deberá escalar la biblioteca como King Kong cada vez que apruebe un examen.</li>
+<li>Artículo N656: Si Josepy no lanza fuego por la boca durante la clase de ciencias, será considerado reptil no comprometido.</li>
+<li>Artículo N657: Josepy no podrá mirar a las chicas si no está disfrazado de lagarto gigante con buenos modales.</li>
+<li>Artículo N658: Si Josepy no destruye simbólicamente una maqueta de cartón cada lunes, será enviado a la Isla de los Monstruos Jubilados.</li>
+<li>Artículo N659: Josepy deberá rugir al menos una vez por clase o será confundido con un humano común.</li>
+<li>Artículo N660: Si Josepy no lleva una cola de Godzilla al colegio, deberá usar una de repuesto hecha de espaguetis secos.</li>
+<li>Artículo N661: Josepy no podrá usar zapatos si no hacen temblar el suelo al caminar.</li>
+<li>Artículo N662: Si Josepy no trepa una torre de pupitres al menos una vez al mes, perderá su membresía en el Club de Simios Colosales.</li>
+<li>Artículo N663: Josepy deberá rugir en japonés antiguo cada vez que entre al baño.</li>
+<li>Artículo N664: Si Josepy no destruye simbólicamente una calculadora al reprobar, será considerado emocionalmente estable.</li>
+<li>Artículo N665: Josepy no podrá usar la palabra “normal” sin pedirle perdón a su cola de dinosaurio.</li>
+<li>Artículo N666: Si Josepy no lanza un avión de papel con forma de helicóptero militar, será considerado pacífico y eso es inaceptable.</li>
+<li>Artículo N667: Josepy deberá llevar una banana gigante como almuerzo para mantener su energía de King Kong.</li>
+<li>Artículo N668: Si Josepy no gruñe al ver una maqueta de ciudad, será enviado a clases de destrucción creativa.</li>
+<li>Artículo N669: Josepy no podrá usar el ascensor si no lo rompe primero con una mirada intensa.</li>
+<li>Artículo N670: Si Josepy no pisa una maqueta de cartón por accidente, deberá hacerlo a propósito.</li>
+<li>Artículo N671: Josepy deberá escribir sus tareas en papel radioactivo o en hojas de palmera gigante.</li>
+<li>Artículo N672: Si Josepy no se comunica con rugidos, será obligado a tomar clases de idioma monstruoso nivel básico.</li>
+<li>Artículo N673: Josepy no podrá usar el pupitre si no lo ha aplastado antes con una garra simbólica.</li>
+<li>Artículo N674: Si Josepy no destruye simbólicamente una maqueta de ciudad al final del trimestre, no podrá graduarse como bestia civilizada.</li>
+<li>Artículo N675: Josepy deberá llevar una mochila con forma de edificio colapsado o será considerado turista escolar.</li>
+<li>Artículo N676: Si Josepy no lanza un rugido al ver una cucaracha, será considerado traidor a la especie monstruosa.</li>
+<li>Artículo N677: Josepy no podrá usar la palabra “amigo” sin antes haberlo salvado de un helicóptero en llamas.</li>
+<li>Artículo N678: Si Josepy no destruye una maqueta de cartón con estilo, será reemplazado por un lagarto de peluche.</li>
+<li>Artículo N679: Josepy deberá usar un cinturón de edificios cada viernes como símbolo de poder urbano.</li>
+<li>Artículo N680: Si Josepy no se enamora de una torre de control, será considerado emocionalmente plano.</li>
+<li>Artículo N681: Josepy no podrá mirar a las chicas si no está trepando un rascacielos con una flor en la mano.</li>
+<li>Artículo N682: Si Josepy no ruge al ver una maqueta de ciudad, será diagnosticado con humanidad crónica.</li>
+<li>Artículo N683: Josepy deberá destruir simbólicamente una fotocopiadora cada vez que reciba una mala nota.</li>
+<li>Artículo N684: Si Josepy no lanza fuego por la boca al ver injusticia, será enviado a clases de ética monstruosa.</li>
+<li>Artículo N685: Josepy no podrá usar la palabra “paz” sin antes haber aplastado un tanque de juguete.</li>
+<li>Artículo N686: Si Josepy no baila sobre una maqueta de ciudad, será considerado insensible al arte de la destrucción.</li>
+<li>Artículo N687: Josepy deberá usar una capa hecha de planos urbanos cada vez que entre al aula.</li>
+<li>Artículo N688: Si Josepy no destruye simbólicamente una maqueta de cartón en la feria de ciencias, será descalificado por ser demasiado civilizado.</li>
+<li>Artículo N689: Josepy no podrá usar la palabra “tranquilo” si no ha rugido en las últimas 24 horas.</li>
+<li>Artículo N690: Si Josepy no trepa una torre de pupitres, será reemplazado por un estudiante con modales.</li>
+<li>Artículo N691: Josepy deberá rugir cada vez que alguien diga “examen sorpresa”.</li>
+<li>Artículo N692: Si Josepy no destruye una maqueta con estilo, será enviado al rincón de los monstruos aburridos.</li>
+<li>Artículo N693: Josepy no podrá usar la palabra “compañero” si no ha salvado a alguien de una avalancha de papeles.</li>
+<li>Artículo N694: Si Josepy no lanza fuego al ver una injusticia escolar, será considerado tibio de corazón.</li>
+<li>Artículo N695: Josepy deberá usar una mochila con forma de volcán activo o será considerado turista escolar.</li>
+<li>Artículo N696: Si Josepy no destruye una maqueta con una sola mirada, será enviado a clases de intimidación visual.</li>
+<li>Artículo N697: Josepy no podrá usar la palabra “amistad” si no ha rugido por ella.</li>
+<li>Artículo N698: Si Josepy no pisa una maqueta accidentalmente, deberá hacerlo con intención artística.</li>
+<li>Artículo N699: Josepy deberá escribir sus ensayos en papel de escamas o en hojas de palmera gigante.</li>
+<li>Artículo N700: Si Josepy no destruye simbólicamente una maqueta de ciudad al final del trimestre, no podrá graduarse como bestia civilizada.</li>
+<li>Artículo N701: Josepy no podrá usar la palabra “normal” sin pedirle perdón a su cola de dinosaurio.</li>
+<li>Artículo N702: Si Josepy no ruge al ver una maqueta de ciudad, será diagnosticado con humanidad crónica.</li>
+<li>Artículo N703: Josepy deberá usar un cinturón de edificios cada viernes como símbolo de poder urbano.</li>
+<li>Artículo N704: Si Josepy no se enamora de una torre de control, será considerado emocionalmente plano.</li>
+<li>Artículo N705: Josepy no podrá mirar a las chicas si no está trepando un rascacielos con una flor en la mano.</li>
+<li>Artículo N706: Si Josepy no destruye una maqueta con estilo, será reemplazado por un lagarto de peluche.</li>
+<li>Artículo N707: Josepy deberá rugir cada vez que alguien diga “examen sorpresa”.</li>
+<li>Artículo N708: Si Josepy no pisa una maqueta accidentalmente, deberá hacerlo con intención artística.</li>
+<li>Artículo N709: Josepy no podrá usar la palabra “tranquilo” si no ha rugido en las últimas 24 horas.</li>
+<li>Artículo N710: Si Josepy no destruye simbólicamente una maqueta de cartón en la feria de ciencias, será descalificado por ser demasiado civilizado.</li>
+<li>Artículo N711: Josepy no podrá mirar a Toy Chica como si fuera una empanada caliente recién salida del horno.</li>
+<li>Artículo N712: Si Josepy menciona a Toy Chica más de tres veces seguidas, será perseguido por un ejército de peluches vengativos.</li>
+<li>Artículo N713: Josepy deberá dejar en paz a Toy Chica o será obligado a compartir cama con King Kong y su colección de pijamas peludos.</li>
+<li>Artículo N714: Si Josepy le escribe una carta a Toy Chica, debe incluir una disculpa por existir cerca de ella.</li>
+<li>Artículo N715: Josepy no podrá usar la palabra “Toy” si no está jugando con bloques de respeto.</li>
+<li>Artículo N716: Si Josepy sueña con Toy Chica, debe reportarlo al Ministerio de Sueños Inapropiados con dibujos explicativos.</li>
+<li>Artículo N717: Josepy será multado si intenta invitar a Toy Chica a ver documentales sobre reptiles románticos.</li>
+<li>Artículo N718: Si Josepy no deja en paz a Toy Chica, King Kong jugará en su cama y le robará la almohada.</li>
+<li>Artículo N719: Josepy no podrá usar la palabra “chica” si no ha aprobado el curso de “Cómo no parecer un desastre emocional”.</li>
+<li>Artículo N720: Si Josepy le guiña el ojo a Toy Chica, será convertido en una tostadora con complejo de inferioridad.</li>
+<li>Artículo N721: Josepy deberá dormir en una caja de cartón si vuelve a decir “Toy Chica es mi crush”.</li>
+<li>Artículo N722: Si Josepy intenta regalarle una piedra a Toy Chica, debe incluir una nota que diga “no es una indirecta”.</li>
+<li>Artículo N723: Josepy no podrá mirar a Toy Chica como si fuera la última galleta del paquete.</li>
+<li>Artículo N724: Si Josepy menciona a Toy Chica en clase, será enviado al rincón de los que no superan sus obsesiones.</li>
+<li>Artículo N725: Josepy deberá compartir su cama con King Kong y un plátano gigante si vuelve a decir “Toy Chica me miró”.</li>
+<li>Artículo N726: Si Josepy le escribe un poema a Toy Chica, debe incluir al menos tres errores gramaticales como castigo.</li>
+<li>Artículo N727: Josepy no podrá usar la palabra “amor” si está pensando en animatrónicos.</li>
+<li>Artículo N728: Si Josepy intenta besar una figura de Toy Chica, será perseguido por ventiladores con celos.</li>
+<li>Artículo N729: Josepy deberá dejar en paz a Toy Chica o será obligado a ver cómo King Kong se pone sus pantuflas en su cama.</li>
+<li>Artículo N730: Si Josepy le regala una flor a Toy Chica, debe incluir certificado de “no estoy desesperado”.</li>
+<li>Artículo N731: Josepy no podrá usar la palabra “crush” si su idea de romance incluye robots con voz metálica.</li>
+<li>Artículo N732: Si Josepy menciona a Toy Chica durante el almuerzo, su comida será reemplazada por aire con sabor a rechazo.</li>
+<li>Artículo N733: Josepy deberá dormir en una cama compartida con King Kong y un ventilador encendido si vuelve a decir “Toy Chica es mía”.</li>
+<li>Artículo N734: Si Josepy intenta abrazar una imagen de Toy Chica, será abrazado por una impresora láser en modo agresivo.</li>
+<li>Artículo N735: Josepy no podrá mirar a Toy Chica como si fuera una pizza con sentimientos.</li>
+<li>Artículo N736: Si Josepy le canta una serenata a Toy Chica, debe hacerlo en idioma de gorila con acento de tostadora.</li>
+<li>Artículo N737: Josepy será multado si intenta invitar a Toy Chica a ver cómo King Kong duerme en su cama.</li>
+<li>Artículo N738: Si Josepy menciona a Toy Chica en su diario, el diario será confiscado por el Consejo de Vergüenza Ajena.</li>
+<li>Artículo N739: Josepy no podrá usar la palabra “bella” si está mirando una figura de acción.</li>
+<li>Artículo N740: Si Josepy sueña con Toy Chica, debe despertarse y pedirle perdón al universo.</li>
+<li>Artículo N741: Josepy deberá compartir su cama con King Kong y una tostadora si vuelve a decir “Toy Chica me guiñó el ojo”.</li>
+<li>Artículo N742: Si Josepy intenta regalarle una nube a Toy Chica, debe incluir pronóstico de rechazo.</li>
+<li>Artículo N743: Josepy no podrá mirar a Toy Chica como si fuera una respuesta a su examen emocional.</li>
+<li>Artículo N744: Si Josepy le escribe una canción a Toy Chica, debe incluir un solo de vergüenza.</li>
+<li>Artículo N745: Josepy será sancionado si intenta conquistar a Toy Chica diciendo “me gustas más que el recreo”.</li>
+<li>Artículo N746: Si Josepy menciona a Toy Chica en voz alta, será perseguido por King Kong con una almohada en la mano.</li>
+<li>Artículo N747: Josepy no podrá usar la palabra “encanto” si está mirando una figura animada con ojos de sopa.</li>
+<li>Artículo N748: Si Josepy le regala una piedra con forma de corazón a Toy Chica, será enviado al museo de los fracasos románticos.</li>
+<li>Artículo N749: Josepy deberá dejar en paz a Toy Chica o King Kong le robará la sábana y el control remoto.</li>
+<li>Artículo N750: Si Josepy intenta escribirle una carta a Toy Chica, debe hacerlo en papel de arrepentimiento.</li>
+<li>Artículo N751: Josepy no podrá mirar a Toy Chica como si fuera una hamburguesa emocional.</li>
+<li>Artículo N752: Si Josepy menciona a Toy Chica en clase de historia, será reescrito como personaje secundario.</li>
+<li>Artículo N753: Josepy deberá dormir en una cama compartida con King Kong y una lámpara que juzga si vuelve a decir “Toy Chica me ama”.</li>
+<li>Artículo N754: Si Josepy le regala una tostadora a Toy Chica, debe incluir manual de “cómo no ser raro”.</li>
+<li>Artículo N755: Josepy no podrá usar la palabra “compañera” si está mirando una figura animada con ojos de necesidad.</li>
+<li>Artículo N756: Si Josepy sueña con Toy Chica, debe despertarse y escribir “lo superaré” cien veces.</li>
+<li>Artículo N757: Josepy será multado si intenta invitar a Toy Chica a ver cómo King Kong ronca en su cama.</li>
+<li>Artículo N758: Si Josepy menciona a Toy Chica en su presentación oral, será interrumpido por una alarma de “no lo hagas”.</li>
+<li>Artículo N759: Josepy no podrá mirar a Toy Chica como si fuera una respuesta a su falta de autoestima.</li>
+<li>Artículo N760: Si Josepy le escribe un poema a Toy Chica, debe incluir una estrofa de “me equivoqué”.</li>
+<li>Artículo N761: Josepy deberá compartir su cama con King Kong y una tostadora si vuelve a decir “Toy Chica me pertenece”.</li>
+<li>Artículo N762: Si Josepy intenta regalarle una flor a Toy Chica, debe incluir certificado de “no estoy desesperado”.</li>
+<li>Artículo N763: Josepy no podrá usar la palabra “crush” si su idea de romance incluye robots con voz metálica.</li>
+<li>Artículo N764: Si Josepy menciona a Toy Chica durante el almuerzo, su comida será reemplazada por aire con sabor a rechazo.</li>
+<li>Artículo N765: Josepy deberá dormir en una cama compartida con King Kong y un ventilador encendido si vuelve a decir “Toy Chica es mía”.</li>
+<li>Artículo N766: Si Josepy intenta abrazar una imagen de Toy Chica, será abrazado por una impresora láser en modo agresivo.</li>
+<li>Artículo N767: Josepy no podrá mirar a Toy Chica como si fuera una pizza con sentimientos.</li>
+<li>Artículo N768: Si Josepy le canta una serenata a Toy Chica, debe hacerlo en idioma de gorila con acento de tostadora.</li>
+<li>Artículo N769: Josepy será multado si intenta invitar a Toy Chica a ver cómo King Kong duerme en su cama.</li>
+<li>Artículo N770: Si Josepy menciona a Toy Chica en su diario, el diario será confiscado por el Consejo de Vergüenza Ajena.</li>
+<li>Artículo N771: Josepy deberá dejar de usar azul y naranja o Toy Chica se mudará debajo de su cama y empezará a decir “ñamñam” cada vez que él respire.</li>
+<li>Artículo N772: Si Josepy aparece en el colegio con ropa azul y naranja, será perseguido por una horda de crayones con hambre de moda.</li>
+<li>Artículo N773: Josepy no podrá combinar azul y naranja sin activar el protocolo “ñamñam” de Toy Chica desde el subsuelo de su colchón.</li>
+<li>Artículo N774: Si Josepy insiste en usar azul y naranja, Toy Chica se instalará bajo su cama con una tostadora y una lista de insultos dulces.</li>
+<li>Artículo N775: Josepy deberá renunciar al azul y naranja o Toy Chica comenzará a susurrarle “ñamñam” en idiomas desconocidos mientras él intenta dormir.</li>
+<li>Artículo N776: Si Josepy no cambia su paleta de colores, Toy Chica organizará un picnic debajo de su cama con peluches que lo juzgan silenciosamente.</li>
+<li>Artículo N777: Josepy no podrá usar azul y naranja jamás, o Toy Chica se convertirá en la reina del subsuelo de su cama y lo despertará cada noche con un “ñamñam” y una mirada de decepción cromática.</li>
+    </ul>
   </section>
 
-  <script src="script.js"></script>
+  <section id="multimedia">
+    <h2>Galería multimedia</h2>
+    <div class="gallery">
+      <img src="oso.jpg" alt="gol">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </section>
+
+  <section id="acerca">
+    <h2>Acerca de Ecuakong</h2>
+    <p>Ecuakong, oficialmente reconocido como el primer simio titánico en el universo 21,galaxia 74 nacido
+         en las faldas del Chimborazo, es una criatura legendaria que combina
+          la fuerza bruta de King Kong con el temperamento impredecible de un 
+          taxista guayaquileño en hora pico. Según los archivos secretos del 
+          Ministerio de Fauna Descontrolada, Ecuakong emergió durante una erupción emocional
+           causada por una pelea entre dos iguanas celosas. Mide 42 metros de altura, 
+           se alimenta exclusivamente de encebollado con ají nivel suicida, y se comunica 
+           mediante rugidos que suenan como “ñañitooo”. Su hábitat natural incluye techos
+            de buses interprovinciales y estadios vacíos donde practica su pasatiempo
+             favorito: lanzar semáforos como frisbees. Aunque algunos lo consideran una 
+             amenaza, otros lo veneran como el protector de los que cruzan la calle sin 
+             mirar. Se rumorea que Toy Chica le tiene miedo, no por su tamaño, sino porque
+              Ecuakong ronca en quichua y duerme abrazado a una bandera del Barcelona SC.</p>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
