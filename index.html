@@ -6,6 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 
+
+
+
+
+/* Fondo espacial oscuro con cubos 3D y chispas */
+.cube-space {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.cube {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #00f5ff, #bdb2ff);
+  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+  transform-style: preserve-3d;
+  animation: cubeDance 12s infinite ease-in-out;
+  border-radius: 6px;
+}
+
+.spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+  animation: sparkFlash 1s infinite ease-in-out;
+}
+
+@keyframes cubeDance {
+  0% { transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg); }
+  25% { transform: translate3d(100px,150px,200px) rotateX(90deg) rotateY(180deg); }
+  50% { transform: translate3d(-150px,100px,-200px) rotateX(180deg) rotateY(270deg); }
+  75% { transform: translate3d(50px,-100px,100px) rotateX(270deg) rotateY(360deg); }
+  100% { transform: translate3d(0,0,0) rotateX(360deg) rotateY(720deg); }
+}
+
+@keyframes sparkFlash {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     /* Animaciones */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
@@ -38,9 +99,11 @@
 
     
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at center, #0f0f1a, #000000);
+  color: white;
+  overflow-x: hidden;
     }
     header {
       background: #2c3e50;
@@ -100,6 +163,28 @@
 </head>
 <body>
 
+
+
+
+<div class="cube-space">
+  <div class="cube" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+  <div class="cube" style="top: 30%; left: 50%; animation-delay: 2s;"></div>
+  <div class="cube" style="top: 60%; left: 70%; animation-delay: 4s;"></div>
+  <div class="cube" style="top: 80%; left: 40%; animation-delay: 6s;"></div>
+  <div class="cube" style="top: 25%; left: 80%; animation-delay: 8s;"></div>
+  <div class="spark" style="top: 35%; left: 52%; animation-delay: 2s;"></div>
+  <div class="spark" style="top: 62%; left: 72%; animation-delay: 4s;"></div>
+  <div class="spark" style="top: 82%; left: 42%; animation-delay: 6s;"></div>
+</div>
+
+
+
+
+
+
+
+
+  
   <header>
     <img src="ECU.png" alt="Logo de Ecuakong" class="zoom-in" height="100" width="100">
     <h1>Estado de Ecuakong</h1>
@@ -909,6 +994,7 @@
 
 </body>
 </html>
+
 
 
 
