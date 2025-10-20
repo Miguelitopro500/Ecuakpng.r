@@ -5,6 +5,38 @@
   <title>Estado de Ecuakong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
+    /* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Clases animadas */
+.fade-in {
+  animation: fadeIn 0.8s ease;
+}
+
+.zoom-in {
+  animation: zoomIn 0.6s ease;
+}
+
+.bounce:hover {
+  animation: bounce 0.5s ease;
+}
+    
+
+    
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -69,7 +101,7 @@
 <body>
 
   <header>
-    <img src="ECU.png" alt="Logo de Ecuakong" height="100" width="100">
+    <img src="ECU.png" alt="Logo de Ecuakong" class="zoom-in" height="100" width="100">
     <h1>Estado de Ecuakong</h1>
   </header>
 
@@ -80,8 +112,8 @@
     <a href="#" onclick="showSection('acerca')">Acerca de</a>
   </nav>
 
-  <section id="ultimo" class="active">
-    <h2>Últimas novedades</h2>
+  <section id="ultimo" class="active fade-in">
+    <h2 class="fade-in">Últimas novedades</h2>
     <br>
     <hr>
       <br>
@@ -90,12 +122,12 @@
     <br>
     <hr>
     <p>18/10/2025</p>
-    <button class="btn" onclick="alert('¡Gracias por seguirnos!')">Seguir</button>
+    <button class="btn bounce" onclick="alert('¡Gracias por seguirnos!')">Seguir</button>
   </section>
 
-<img src="sello.jpg" alt="propiedad" height="200" width="200">
+<img src="sello.jpg" alt="propiedad" class="zoom-in" height="200" width="200">
 
-  <section id="articulos">
+  <section id="articulos" class="fade-in">
     <h2>Artículos destacados</h2>
     <ul>
       <li>Artículo N1: RGHRGHRUE.</li>
@@ -842,16 +874,16 @@
     </ul>
   </section>
 
-  <section id="multimedia">
-    <h2>Galería multimedia</h2>
+  <section id="multimedia" class="fade-in">
+    <h2 class="fade-in">Galería multimedia</h2>
     <div class="gallery">
-      <img src="Celebrando.jpg" alt="Celebrando" width="200" height="200">
-      <img src="oso.jpg" alt="gol">
-      <img src="" alt="" width="" height="">
+      <img src="Celebrando.jpg" alt="Celebrando" class="zoom-in" width="200" height="200">
+      <img src="oso.jpg" alt="gol" class="zoom-in">
+      <img src="" alt="" class="zoom-in" width="" height="">
     </div>
   </section>
 
-  <section id="acerca">
+  <section id="acerca" class="fade-in">
     <h2>Acerca de Ecuakong</h2>
     <p>Ecuakong, oficialmente reconocido como el primer simio titánico en el universo 21,galaxia 74 nacido
          en las faldas del Chimborazo, es una criatura legendaria que combina
@@ -877,6 +909,7 @@
 
 </body>
 </html>
+
 
 
 
